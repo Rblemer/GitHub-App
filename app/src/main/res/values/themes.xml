@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources >
+<!-- Base application theme. -->
+<style name="Base.Theme.GitHubApp" parent="Theme.Material3.DynamicColors.DayNight">
+    <!-- Customize your light theme here. -->
 
-    <style name="Theme.GitHubApp" parent="android:Theme.Material.Light.NoActionBar" />
+</style>
+
+<style name="Theme.GitHubApp" parent="Base.Theme.GitHubApp" />
+
+
 </resources>

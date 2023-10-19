@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/usersListFragment">
+
+    <fragment
+        android:id="@+id/usersListFragment"
+        android:name="br.com.githubapp.ui.user.list.UsersListFragment"
+        android:label="UsersListFragment"
+        tools:layout="@layout/fragment_users_list">
+        <action
+            android:id="@+id/action_usersListFragment_to_userDetailFragment"
+            app:destination="@id/userDetailFragment" />
+        <action
+            android:id="@+id/action_usersListFragment_to_searchUserDialogFragment"
+            app:destination="@id/searchUserDialogFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userDetailFragment"
+        android:name="br.com.githubapp.ui.user.detail.UserDetailFragment"
+        android:label="UserDetailFragment"
+        tools:layout="@layout/fragment_user_detail">
+        <action
+            android:id="@+id/action_userDetailFragment_to_repositoryListFragment"
+            app:destination="@id/repositoryListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoriteListFragment"
+        android:name="br.com.githubapp.ui.user.FavoriteListFragment"
+        android:label="FavoriteListFragment"
+        tools:layout="@layout/fragment_users_list">
+        <action
+            android:id="@+id/action_favoriteListFragment_to_userDetailFragment"
+            app:destination="@id/userDetailFragment" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/searchUserDialogFragment"
+        android:name="br.com.githubapp.ui.SearchUserDialogFragment"
+        android:label="SearchUserDialogFragment"
+        tools:layout="@layout/fragment_search_user_dialog">
+        <action
+            android:id="@+id/action_searchUserDialogFragment_to_userDetailFragment"
+            app:destination="@id/userDetailFragment" />
+    </dialog>
+    <fragment
+        android:id="@+id/insertPersonalUsernameFragment"
+        android:name="br.com.githubapp.ui.personal.InsertPersonalUsernameFragment"
+        android:label="InsertPersonalUsernameFragment"
+        tools:layout="@layout/fragment_insert_personal_username">
+        <action
+            android:id="@+id/action_insertPersonalUsernameFragment_to_personalDetailFragment"
+            app:destination="@id/personalDetailFragment" />
+    </fragment>
+
+    <action
+        android:id="@+id/go_to_usersListFragment"
+        app:destination="@id/usersListFragment" />
+
+    <action
+        android:id="@+id/go_to_favoriteUsersListFragment"
+        app:destination="@id/favoriteListFragment" />
+
+    <action
+        android:id="@+id/go_to_personalInfo"
+        app:destination="@id/insertPersonalUsernameFragment" />
+    <fragment
+        android:id="@+id/personalDetailFragment"
+        tools:layout="@layout/fragment_user_detail"
+        android:name="br.com.githubapp.ui.personal.PersonalDetailFragment"
+        android:label="PersonalDetailFragment" >
+        <action
+            android:id="@+id/action_personalDetailFragment_to_repositoryListFragment"
+            app:destination="@id/repositoryListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/repositoryListFragment"
+        tools:layout="@layout/fragment_repository_list"
+        android:name="br.com.githubapp.ui.repository.list.RepositoryListFragment"
+        android:label="RepositoryListFragment" />
+
+
+</navigation>

@@ -1,3 +1,30 @@
 <resources>
-    <string name="app_name">GitHubApp</string>
+    <string name="app_name">Github App</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="placeholder_no_description">Nenhuma descrição encontrada</string>
+    <string name="placeholder_not_found">Não encontrado</string>
+    <string name="label_users">Usuários</string>
+    <string name="label_favorites">Favoritos</string>
+    <string name="label_public_repos">Repositórios públicos</string>
+    <string name="label_following">Seguindo</string>
+    <string name="label_followers">Seguidores</string>
+    <string name="label_company">Empresa: </string>
+    <string name="label_blog">Blog: </string>
+    <string name="label_twitter">Twitter: </string>
+    <string name="label_email">Email: </string>
+    <string name="label_location">Localização: </string>
+    <string name="label_search_insert_username">Insira o nome do usuário</string>
+    <string name="label_username">Nome do usuário</string>
+    <string name="label_insert_your_username">Insira o seu nome de usuário</string>
+    <string name="label_me">Eu</string>
+    <string name="label_see_all">Ver todos</string>
+
+    <string name="feedback_no_internet_connection">Ops, parece que você está sem conexão com a internet. Ative o Wifi ou os dados móveis e toque para tentar novamente.</string>
+    <string name="feedback_generic_error">Ops, não foi possível conectar. Verifique sua conexão com a internet ou tente novamente mais tarde.</string>
+    <string name="feedback_empty_response_favorite">Parece que você anda não favoritou um perfil. Quando você favoritar, ele ficará salvo aqui.</string>
+    <string name="feedback_empty_response_generic">Ops, parece que não há informações para serem exibidas aqui</string>
+    <string name="feedback_search_empty_field">Insira o nome de usuário</string>
+    <string name="feedback_no_user_found">Nenhum usuário com esse username encontrado.</string>
+
+    <string name="title_repositories">Repositórios de %1$s</string>
 </resources>
